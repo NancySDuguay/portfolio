@@ -1,18 +1,21 @@
-//@themeCol1: #7bab2e;
-//@themeCol2: #F2E38E;
-//@themeCol3: #F2AE72;
-//@themeCol4: #D96459;
-//@themeCol5: #8C4646;
+@themeCol1: #588C7E;
+@themeCol2: #F2E394;
+@themeCol3: #F2AE72;
+@themeCol4: #D96459;
+@themeCol5: #8C4646;
 
-@themeCol1: #64779C;
-@themeCol2: #3F4D69;
-@themeCol3: #99C8CF;
-@themeCol4: #D5C4BD;
-@themeCol5: #9C736C;
+//@themeCol1: #64779C;
+//@themeCol2: #3F4D69;
+//@themeCol3: #99C8CF;
+//@themeCol4: #D5C4BD;
+//@themeCol5: #9C736C;
 
-@defaultTextColor:@themeCol2;
-@defaultButtonColor:@themeCol5;
-@navbarBG:@themeCol2;
+@defaultTextColor:@themeCol5;
+@defaultButtonColor:@themeCol1;
+@navbarBG:@themeCol5;
+@biographyBg:@themeCol3;
+@portfolioBg:@themeCol2;
+@footerBg:@themeCol1;
 
 #currentImage {
 	margin: auto;
@@ -27,7 +30,7 @@
 }
 
 #main {
-	padding-top:60px;
+	padding-top:50px;
 }
 .navbar-default {
     background-color: @navbarBG;
@@ -79,4 +82,55 @@ img {
 .btn-primary:hover {
 	background-color: darken(@defaultButtonColor,20%);
 	border-color: darken(@defaultButtonColor,20%);
+}
+
+.biography {
+	background-color:@biographyBg;
+	//color:white;
+	padding-top:20px;
+	padding-left:50px;
+	padding-right:50px;
+	padding-bottom:20px;
+}
+
+.btn-primary.nav {
+	margin-top: 10px;
+	border-radius: 8px;
+	background-color:@navbarBG;
+	border-color:white;
+	border-width:2px;
+	margin-bottom:10px;
+	padding-left: 10px;
+	margin-left:10px;
+	font-size:18px;
+}
+
+.dropdown-toggle.nav {
+	color:white;
+}
+
+.portfolio {
+	background-color:@portfolioBg;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.footer {
+	background-color:@footerBg;
+	color:#DDDDDD;
+	padding-bottom:20px;
+	padding-top:0px;
+}
+
+.socialBtn {
+	color:#DDDDDD;
+}
+
+
+.contactMeBar {
+ 	border: 0;
+    border-bottom: 3px dashed #ccc;
+    padding-top: 10px;
+    margin-top:0px;
+    margin-bottom:0px;
 }

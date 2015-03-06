@@ -10,11 +10,11 @@
   background: rgba(50, 50, 50, 0.7);
 }
 #main {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 .navbar-default {
-  background-color: #3f4d69;
-  border-color: #2a3346;
+  background-color: #8c4646;
+  border-color: #673333;
 }
 .verticalMargins {
   padding-top: 10px;
@@ -32,23 +32,65 @@
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: white;
-  background-color: #2a3346;
+  background-color: #673333;
 }
 .navbar-default .navbar-nav > li {
   color: white;
 }
 body {
-  color: #3f4d69;
+  color: #8c4646;
 }
 img {
   background-color: grey;
 }
 .btn-primary {
-  background-color: #9c736c;
+  background-color: #588c7e;
   border-radius: 0px;
-  border-color: #7f5c56;
+  border-color: #446d62;
 }
 .btn-primary:hover {
-  background-color: #614641;
-  border-color: #614641;
+  background-color: #314d46;
+  border-color: #314d46;
+}
+.biography {
+  background-color: #f2ae72;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+.btn-primary.nav {
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #8c4646;
+  border-color: white;
+  border-width: 2px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.dropdown-toggle.nav {
+  color: white;
+}
+.portfolio {
+  background-color: #f2e394;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer {
+  background-color: #588c7e;
+  color: #DDDDDD;
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+.socialBtn {
+  color: #DDDDDD;
+}
+.contactMeBar {
+  border: 0;
+  border-bottom: 3px dashed #ccc;
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

@@ -15,7 +15,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="external/font-awesome-4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
     <div class="gallery">
@@ -30,13 +32,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Nancy Duguay Portfolio</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#">About me</a></li>
+            <li><button class='btn btn-primary nav'>About me</button></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio <span class="caret"></span></a>
+              <button class='btn dropdown-toggle btn-primary nav' data-toggle="dropdown" role="button" aria-expanded="false">Portfolio <span class="caret"></span></button>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#"></a></li>
                 <li><a href="#">3D work</a></li>
@@ -48,19 +49,25 @@
                 <li><a href="#">Digital Art</a></li>
               </ul>
             </li>
-            <li><a href="#">Programming Skills</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><button class='btn btn-primary nav'>Programming Skills</button></li>
+            <li><button class='btn btn-primary nav'>Contact me</button></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="container-fluid" id="main">
       <div class="row">
+        <div class="col-sm-12 biography text-center">
+          <h1>Hi there, I'm <b>Nancy Duguay</b></h1>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        </div>
+      </div>
+      <div class="row portfolio">
         <div class="col-sm-12">
           <h2>Graphic Work</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row text-center portfolio">
         <div class="col-sm-4">
             <img src="imgs/characterSprite.jpg" style="display:inline-block" class="thumbnail img-responsive">
             <h3>Project 1</h3>
@@ -83,7 +90,7 @@
             <button class="btn btn-primary more" value="More">More</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row portfolio">
         <div class="col-sm-4">
             <img src="imgs/MADD.jpg" style="display:inline-block" class="thumbnail img-responsive">
             <h3>Project 1</h3>
@@ -106,12 +113,12 @@
             <button class="btn btn-primary more" value="More">More</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row portfolio text-center">
         <div class="col-sm-12">
           <h2>Traditional Work</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row portfolio">
         <div class="col-sm-4">
             <img src="imgs/garfield.jpg" style="display:inline-block" class="thumbnail img-responsive">
             <h3>Project 4</h3>
@@ -134,7 +141,14 @@
             <button class="btn btn-primary more" value="More">More</button>
         </div>
       </div>
-
+      <div class="row">
+        <div class="col-sm-12 text-center footer">
+          <hr class='contactMeBar'>
+          <h1>Contact me</h1>
+          <a href='http://ca.linkedin.com/pub/nancy-duguay/65/185/a95' class='socialBtn'><i class="fa fa-linkedin-square fa-5x"></i></a>&nbsp&nbsp<a href='https://github.com/NancySDuguay' class='socialBtn'><i class="fa fa-github-square fa-5x"></i></a>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="external/jQuery/jquery-1.11.2.min.js"></script>
     <script src="external/jQuery/jquery-ui.min.js"></script>
