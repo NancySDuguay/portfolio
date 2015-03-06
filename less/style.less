@@ -1,0 +1,82 @@
+//@themeCol1: #7bab2e;
+//@themeCol2: #F2E38E;
+//@themeCol3: #F2AE72;
+//@themeCol4: #D96459;
+//@themeCol5: #8C4646;
+
+@themeCol1: #64779C;
+@themeCol2: #3F4D69;
+@themeCol3: #99C8CF;
+@themeCol4: #D5C4BD;
+@themeCol5: #9C736C;
+
+@defaultTextColor:@themeCol2;
+@defaultButtonColor:@themeCol5;
+@navbarBG:@themeCol2;
+
+#currentImage {
+	margin: auto;
+	margin-top:60px;
+}
+.gallery {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	background: rgba(50, 50, 50, .7);
+}
+
+#main {
+	padding-top:60px;
+}
+.navbar-default {
+    background-color: @navbarBG;
+    border-color: darken(@navbarBG, 11%);
+}
+
+.verticalMargins {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: darken(@navbarBG, 11%);
+}
+
+.navbar-default .navbar-nav > li {
+    color: white;
+}
+
+body {
+    color: @defaultTextColor;
+    //background: @themeCol3;
+}
+
+img {
+	background-color: grey;
+}
+
+.btn-primary {
+	background-color: @defaultButtonColor;
+	border-radius: 0px;
+	border-color: darken(@defaultButtonColor,10%);
+}
+
+.btn-primary:hover {
+	background-color: darken(@defaultButtonColor,20%);
+	border-color: darken(@defaultButtonColor,20%);
+}
