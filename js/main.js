@@ -16,14 +16,6 @@ $( document ).ready(function() {
 		$('#currentImage').attr('src', $(this).attr('src').replace('.jpg','') + '_LG.jpg');
 	});
 
-
-	/*$('img.thumbnail.img-responsive').toggle(function()
-	 {$(this).animate({width: "500px"}, 'slow');},
-	 function()
-	 {$(this).animate({width: "200px"}, 'slow');
-	});*/
-
-
     $( document ).on('click', '.btn.btn-primary', function(){
     	if($(this).attr('class') == ('btn btn-primary more')) {
    			$(this).parent().insertBefore($(this).parent().parent().children(':first-child'));
@@ -49,4 +41,34 @@ $( document ).ready(function() {
     		$(this).parent().parent().children(':nth-child(2)').switchClass('col-sm-6', 'col-sm-4', 400, 'swing');
 	    }
     });
+
+	 $('#contact-form').validate(
+	 {
+	  rules: {
+	    name: {
+	      minlength: 2,
+	      required: true
+	    },
+	    email: {
+	      required: true,
+	      email: true
+	    },
+	    subject: {
+	      minlength: 2,
+	      required: true
+	    },
+	    message: {
+	      minlength: 2,
+	      required: true
+	    }
+	  },
+	  highlight: function(element) {
+	    $(element).closest('.control-group').removeClass('success').addClass('error');
+	  },
+	  success: function(element) {
+	    element
+	    .text('OK!').addClass('valid')
+	    .closest('.control-group').removeClass('error').addClass('success');
+	  }
+	 });
 });
