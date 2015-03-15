@@ -72,12 +72,12 @@ $( document ).ready(function() {
 	  }
 	 });
 
-	$(".img").mouseenter(function(){
-        $(this).addClass("hover");
+	$(".imgWrapper").mouseenter(function(){
+        $(this).find( "div" ).removeClass('hidden');
     })
     // handle the mouseleave functionality
     .mouseleave(function(){
-        $(this).removeClass("hover");
+        $(this).find( "div" ).addClass('hidden');
     });
 
 	/*$('img.thumbnail').mouseenter(function(){
