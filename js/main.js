@@ -71,4 +71,31 @@ $( document ).ready(function() {
 	    .closest('.control-group').removeClass('error').addClass('success');
 	  }
 	 });
+
+	$(".img").mouseenter(function(){
+        $(this).addClass("hover");
+    })
+    // handle the mouseleave functionality
+    .mouseleave(function(){
+        $(this).removeClass("hover");
+    });
+
+	/*$('img.thumbnail').mouseenter(function(){
+        $(this).addClass("hover");
+        $(".overlay").removeClass("hidden");
+        $(".close-overlay").removeClass("hidden");
+        $(".close-overlay").click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            if ($(this).closest(".img").hasClass("hover")) {
+                $(this).closest(".img").removeClass("hover");
+            }
+        });
+    })
+
+    .mouseleave(function(){
+            $(this).removeClass("hover");
+            $(".close-overlay").addClass("hidden");
+            $(".overlay").addClass("hidden");
+        });*/
 });
