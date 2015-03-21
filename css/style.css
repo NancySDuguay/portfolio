@@ -88,6 +88,7 @@ div.imgWrapper {
 div.imgOverlay {
   vertical-align: middle;
   position: absolute;
+  display: table-cell;
   bottombottom: 0px;
   left: 0px;
   top: 0px;
@@ -146,6 +147,14 @@ label.error {
 }
 .contactMe {
   background-color: #588c7e;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
 }
 /* ============================================================
   GLOBAL
