@@ -8,7 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="external/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Optional theme -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,7 +17,6 @@
     <![endif]-->
     <link rel="stylesheet" href="external/font-awesome-4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
   </head>
   <body>
     <div class="gallery">
@@ -174,47 +173,34 @@
         </div>
       </div>
       <div class="row contactMe">
-        <dev class="col-sm-4 col-sm-offset-4 text-left footer">
-          <form action="" id="contact-form" class="form-horizontal text-left">
-            <fieldset>
-                <div class="control-group inline">
-                  <label class="control-label" for="name">Your Name</label>
-                  <div class="controls">
-                    <input type="text" class="input-xlarge" name="name" id="name">
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="email">Email Address</label>
-                  <div class="controls">
-                    <input type="text" class="input-xlarge" name="email" id="email">
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="subject">Subject</label>
-                  <div class="controls">
-                    <input type="text" class="input-xlarge" name="subject" id="subject">
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="message">Your Message</label>
-                  <div class="controls">
-                    <textarea class="input-xlarge" name="message" id="message" rows="3"></textarea>
-                  </div>
-                </div>
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-primary btn-large">Submit</button>
-                </div>
-              </fieldset>
+        <div class="col-sm-4 col-sm-offset-4 text-left footer">
+          <form role="form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" name="name" id="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" name="email" id="email">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject">
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
             </form>
           </div>
         </div>
         <div class='row'>
           <div class="col-sm-12 text-center footer">
-            <a href='http://ca.linkedin.com/pub/nancy-duguay/65/185/a95' class='socialBtn'><i class="fa fa-linkedin-square fa-5x"></i></a>&nbsp&nbsp<a href='https://github.com/NancySDuguay' class='socialBtn'><i class="fa fa-github-square fa-5x"></i></a>
+            <a href='http://ca.linkedin.com/pub/nancy-duguay/65/185/a95' class='socialBtn'><i class="fa fa-linkedin-square fa-3x"></i></a>&nbsp&nbsp<a href='https://github.com/NancySDuguay' class='socialBtn'><i class="fa fa-github-square fa-3x"></i></a>
           </div>
         </div>
       </div>
-    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="external/jQuery/jquery-1.11.2.min.js"></script>
     <script src="external/jQuery/jquery-ui.min.js"></script>
