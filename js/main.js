@@ -1,7 +1,9 @@
 $( document ).ready(function() {
+	$(document).scroll(function() {
+		var x = $(this).scrollTop();
+    $("#banner").css('background-position', '0% ' + parseInt(-x / 4) + 'px');
+	});
 
-	$('.gallery').hide();
-    console.log( "ready!" );
 
 	$( document ).on("mouseover", "img.thumbnail.img-responsive", function() {
 		$(this).css("cursor","pointer");
@@ -9,7 +11,7 @@ $( document ).ready(function() {
 
 	$( document ).on("click", ".gallery" , function() {
 		$('.gallery').fadeOut( "swing" );
-	}); 
+	});
 
 	$( document ).on("click", "img.thumbnail.img-responsive", function() {
 		$('.gallery').fadeIn( "swing" );
